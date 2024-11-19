@@ -1,5 +1,18 @@
 package Domain.Model.Ejercicio2;
 
-public class Documento {
+public abstract class Documento {
+    protected String nombre;
+
+    public Documento(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void exportar() {
+        exportarFormato();
+    }
+
+    public abstract void exportarFormato();
+
+    
 
 }
